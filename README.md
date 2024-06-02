@@ -13,8 +13,8 @@ Rockbuster Stealth LLC is a movie rental company that used to have stores around
 # Data sets
 Rockbuster data set loaded via [PostgreSQL](http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip).
 
-# Data visualisation and insights
-The presentation can be found [here](https://public.tableau.com/views/3_10-VLS/Story1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
+# Resources
+The presentation containing data visualisations and recommendations can be found [here](https://public.tableau.com/views/3_10-VLS/Story1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
 
 # Tools
 For this project, the following python libraries were used:

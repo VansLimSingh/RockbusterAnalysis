@@ -1,0 +1,4 @@
+SELECT payment_id, customer_id, staff_id, rental_id, amount
+FROM payment
+GROUP BY 1,2,3,4,5
+HAVING count(*)>1;

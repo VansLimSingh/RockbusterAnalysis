@@ -1,0 +1,13 @@
+SELECT *
+FROM film
+WHERE film_id is NULL
+OR title IS NULL
+OR description is NULL
+OR release_year is NULL
+OR language_id is NULL
+OR rental_duration is NULL
+OR rental_rate is NULL
+OR length is NULL
+OR replacement_cost is NULL
+OR rating is NULL
+OR special_features is NULL

@@ -1,1 +1,42 @@
+WITH Top5Customers_Paid (customer_id,amount) AS
+--Top 5 customers and what they paid--
+	(SELECT 
+        A.customer_id,
+        SUM(A.amount) AS total_paid
+    FROM 
+        payment A
+    JOIN 
+        customer B ON A.customer_id = B.customer_id
+    JOIN 
+        address C ON B.address_id = C.address_id
+    JOIN 
+        city D ON C.city_id = D.city_id
+    JOIN 
+        country E ON D.country_id = E.country_id
+    WHERE 
+        E.country IN (
+            SELECT 
+                E.country
+            FROM 
+                payment A
+            JOIN 
+                customer B ON A.customer_id = B.customer_id
+            JOIN 
+                address C ON B.address_id = C.address_id
+            JOIN 
+                city D ON C.city_id = D.city_id
+            JOIN 
+                country E ON D.country_id = E.country_id
+            GROUP BY
+                E.country
+            ORDER BY
+                COUNT(A.customer_id) DESC
+            LIMIT 10
+        )
+    GROUP BY 
+        A.customer_id
+	ORDER BY total_paid desc
+	limit 5)
 
+SELECT avg (amount)
+FROM Top5Customers_Paid

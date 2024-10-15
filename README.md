@@ -17,6 +17,6 @@ Rockbuster data set loaded via [PostgreSQL](http://www.postgresqltutorial.com/wp
 The presentation containing data visualisations and recommendations can be found [here](https://public.tableau.com/views/3_10-VLS/Story1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link).
 
 # Tools
-For this project, the following python libraries were used:
+For this project, the following python tools were used:
 * PostgreSQL database
 * Tableau for visualisation

@@ -19,4 +19,4 @@ The presentation containing data visualisations and recommendations can be found
 # Tools
 For this project, the following tools were used:
 * PostgreSQL database
-* Tableau for visualisation
+* Tableau for [visualisation]([url](https://public.tableau.com/views/3_10-VLS/Story1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
